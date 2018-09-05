@@ -23,7 +23,7 @@
  * THE SOFTWARE.
  */
 
-namespace occ2\Control;
+namespace occ2\control;
 
 /**
  * IConfigurator inteface
