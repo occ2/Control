@@ -4,8 +4,68 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9f2d9a8984d716fbc12e391ba23c015",
+    "content-hash": "9e0e190aaffa86f95aa0eccfb9654aad",
     "packages": [
+        {
+            "name": "contributte/cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/cache.git",
+                "reference": "173d315ddef9730204fdc3d0db6c0fae2b466719"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/cache/zipball/173d315ddef9730204fdc3d0db6c0fae2b466719",
+                "reference": "173d315ddef9730204fdc3d0db6c0fae2b466719",
+                "shasum": ""
+            },
+            "require": {
+                "nette/caching": "~2.5.8",
+                "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/di": "<2.4.13",
+                "nette/utils": "<2.5.0"
+            },
+            "require-dev": {
+                "nette/di": "~2.4.13",
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.8.0"
+            },
+            "suggest": {
+                "nette/di": "to use CacheFactoryExtension[CompilerExtension]"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Cache\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Šulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Extra contrib to nette/cache",
+            "homepage": "https://github.com/contributte/cache",
+            "keywords": [
+                "cache",
+                "nette",
+                "provider"
+            ],
+            "time": "2018-09-04T12:09:05+00:00"
+        },
         {
             "name": "contributte/event-dispatcher",
             "version": "v0.5",
@@ -286,6 +346,75 @@
             "time": "2018-03-20T16:32:50+00:00"
         },
         {
+            "name": "nette/di",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/di.git",
+                "reference": "261b5dd52d41a42bf287e2690dcc21b8d61595e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/di/zipball/261b5dd52d41a42bf287e2690dcc21b8d61595e6",
+                "reference": "261b5dd52d41a42bf287e2690dcc21b8d61595e6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "nette/neon": "^2.3.3 || ~3.0.0",
+                "nette/php-generator": "^3.0",
+                "nette/utils": "^2.5 || ~3.0.0",
+                "php": ">=7.1"
+            },
+            "conflict": {
+                "nette/bootstrap": "<2.4",
+                "nette/nette": "<2.2"
+            },
+            "require-dev": {
+                "nette/tester": "^2.0",
+                "tracy/tracy": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "💎 Nette Dependency Injection Container: Flexible, compiled and full-featured DIC with perfectly usable autowiring and support for all new PHP 7.1 features.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "compiled",
+                "di",
+                "dic",
+                "factory",
+                "ioc",
+                "nette",
+                "static"
+            ],
+            "time": "2018-08-22T09:05:00+00:00"
+        },
+        {
             "name": "nette/finder",
             "version": "v2.4.2",
             "source": {
@@ -418,6 +547,129 @@
                 "url"
             ],
             "time": "2018-09-03T19:16:55+00:00"
+        },
+        {
+            "name": "nette/neon",
+            "version": "v2.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/neon.git",
+                "reference": "5e72b1dd3e2d34f0863c5561139a19df6a1ef398"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/neon/zipball/5e72b1dd3e2d34f0863c5561139a19df6a1ef398",
+                "reference": "5e72b1dd3e2d34f0863c5561139a19df6a1ef398",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "ext-json": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "nette/tester": "~2.0",
+                "tracy/tracy": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
+            "homepage": "http://ne-on.org",
+            "keywords": [
+                "export",
+                "import",
+                "neon",
+                "nette",
+                "yaml"
+            ],
+            "time": "2018-03-21T12:12:21+00:00"
+        },
+        {
+            "name": "nette/php-generator",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/php-generator.git",
+                "reference": "d36064d45fad4195f3220ff8c656b7d50cb80333"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/d36064d45fad4195f3220ff8c656b7d50cb80333",
+                "reference": "d36064d45fad4195f3220ff8c656b7d50cb80333",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "^2.4.2 || ~3.0.0",
+                "php": ">=7.1"
+            },
+            "conflict": {
+                "nette/nette": "<2.2"
+            },
+            "require-dev": {
+                "nette/tester": "^2.0",
+                "tracy/tracy": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.3 features.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "code",
+                "nette",
+                "php",
+                "scaffolding"
+            ],
+            "time": "2018-08-29T17:24:49+00:00"
         },
         {
             "name": "nette/reflection",
@@ -566,6 +818,43 @@
             "time": "2018-05-02T17:16:08+00:00"
         },
         {
+            "name": "occ2/flashes",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/occ2/flashes.git",
+                "reference": "0199d734e00dcf62b8caa62507b9ed7731ab0b26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/occ2/flashes/zipball/0199d734e00dcf62b8caa62507b9ed7731ab0b26",
+                "reference": "0199d734e00dcf62b8caa62507b9ed7731ab0b26",
+                "shasum": ""
+            },
+            "require": {
+                "nette/application": "^2.4",
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "occ2\\flashes\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Onderka",
+                    "email": "milan_onderka@occ2.cz"
+                }
+            ],
+            "description": "Extra contribute of Nette Application flash messages with Bootstrap4 alert style",
+            "time": "2018-09-05T19:59:23+00:00"
+        },
+        {
             "name": "symfony/event-dispatcher",
             "version": "v4.1.4",
             "source": {
@@ -632,7 +921,11 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "occ2/flashes": 20,
+        "contributte/cache": 20,
+        "nette/di": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
