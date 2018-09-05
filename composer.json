@@ -1,0 +1,14 @@
+{
+    "name": "occ2/Control",
+    "description": "Boosted Nette Control",
+    "authors": [
+        {
+            "name": "Milan Onderka",
+            "email": "milan_onderka@occ2.cz"
+        }
+    ],
+    "require": {
+        "nette/application": "v2.4.12",
+        "contributte/event-dispatcher": "v0.5"
+    }
+}
