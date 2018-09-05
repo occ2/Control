@@ -8,4 +8,4 @@ Boosted Nette Control
 
 installation    
 
-_composer require occ2/Control_
+_composer require occ2/control_
