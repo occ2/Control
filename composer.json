@@ -9,6 +9,9 @@
     ],
     "require": {
         "nette/application": "v2.4.12",
-        "contributte/event-dispatcher": "v0.5"
+        "contributte/event-dispatcher": "v0.5",
+        "occ2/flashes": "dev-master",
+        "contributte/cache": "dev-master",
+        "nette/di": "* dev-master"
     }
 }
